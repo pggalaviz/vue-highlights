@@ -21,6 +21,8 @@ import VueHighlights, { autoLink, autoHighlight } from 'vue-highlights'
 Vue.component(VueHighlights.name, VueHighlights)
 ```
 
+You can check a demo here: [pggalaviz.github.io/vue-highlights](https://pggalaviz.github.io/vue-highlights)
+
 ## Usage
 
 Let's create our first component:
