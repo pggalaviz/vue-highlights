@@ -96,19 +96,23 @@
     </div>
 
     <div class="column center vcenter">
-      <div class="mb-md">
-        <h4>HTML with links:</h4>
-        <div class="content-container text-md" v-html="$autoLink(text, options)"></div>
-      </div>
+      <div class="content-container">
+        <div class="mb-md">
+          <h4>HTML with links:</h4>
+          <div class="text-md" v-html="$autoLink(text, options)"></div>
+        </div>
 
-      <div class="mb-md">
-        <h4>Text with links:</h4>
-        <div class="content-container"> {{ $autoLink(text, options) }}</div>
-      </div>
+        <div class="mb-md">
+          <h4>Text with links:</h4>
+          <div class="text-center">
+            <div class=""> {{ $autoLink(text, options) }}</div>
+          </div>
+        </div>
 
-      <div class="mb-md">
-        <h4>Model text:</h4>
-        <div class="content-container"> {{ text }}</div>
+        <div class="mb-md">
+          <h4>Model text:</h4>
+          <div class=""> {{ text }}</div>
+        </div>
       </div>
     </div>
 

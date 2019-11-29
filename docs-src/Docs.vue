@@ -2,6 +2,7 @@
   <div id="docs">
     <div class="container">
       <h2>Documentation</h2>
+
       <h3>Installation</h3>
 
       <p>You can install via npm or yarn:</p>

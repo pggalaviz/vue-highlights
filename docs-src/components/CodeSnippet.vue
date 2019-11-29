@@ -42,6 +42,7 @@ export default {
   padding: 0px !important
   margin-bottom: $space-base
   font-family: 'Roboto Mono', monospace
+  overflow-y: scroll
 
   .line-numbers,
   .render
