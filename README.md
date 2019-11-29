@@ -3,6 +3,7 @@
 Easy @mention, #hashtag and URL highlight for Vue 2.x
 
 ## Installation
+
 You can install via npm or yarn:
 
 ```shell
@@ -48,6 +49,7 @@ export default {
 }
 </script>
 ```
+
 As you can see, the component accepts some props:
 
 | Prop | Type | Description |
