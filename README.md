@@ -21,7 +21,7 @@ import VueHighlights, { autoLink, autoHighlight } from 'vue-highlights'
 Vue.component(VueHighlights.name, VueHighlights)
 ```
 
-##Usage
+## Usage
 
 Let's create our first component:
 
