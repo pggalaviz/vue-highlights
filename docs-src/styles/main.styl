@@ -1,0 +1,57 @@
+@import 'variables'
+@import 'reset'
+@import 'base'
+@import 'spacing'
+@import 'typo'
+
+// Mentions
+
+.highlights__content
+  position: relative
+
+.highlights__placeholder
+  color: #ccc
+  position: absolute
+  top: $space-base
+  left: $space-base
+  z-index: -1
+
+.box,
+.highlights__body-container
+  border-radius: 5px
+  box-shadow: 0 5px 15px 0 rgba(80,86,98,.1), 0 2px 4px 0 rgba(199,202,209,.4)
+  padding: $space-base
+
+.highlights__body
+  min-height: 60px
+
+.highlights
+  color: $color-primary
+
+.label
+  display: block
+  margin-bottom: 3px
+
+.input
+  background-color: $color-background
+  background-image: none
+  border: 1px solid $color-gray-1
+  border-radius: 4px
+  color: $color-gray-9
+  cursor: text
+  display: block
+  font-size: 12px
+  height: 32px
+  line-height: 32px
+  max-width: 100%
+  min-width: 100%
+  padding: 2px 8px
+  position: relative
+  transition: all .2s
+  width: 100%
+  &:hover
+    border-color: $color-gray-4
+  &:focus,
+  &.focus
+    border-color: $color-brand
+    outline: none

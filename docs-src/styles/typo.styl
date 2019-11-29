@@ -1,0 +1,74 @@
+// Typo
+
+// Headings
+// ========
+$--typo-header-font-family   ?= $font-helvetica
+$--typo-header-font-weight   ?= 800
+$--typo-header-font-style    ?= normal
+$--typo-header-color         ?= inherit
+$--typo-header-line-height   ?= $global-line-height-heading
+$--typo-header-margin-bottom ?= $space-base/2
+
+strong, b
+  font-weight: $font-weight-bold
+  line-height: inherit
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6
+  font-family: $--typo-header-font-family
+  font-style: $--typo-header-font-style
+  font-weight: $--typo-header-font-weight
+  color: $--typo-header-color
+  text-rendering: optimizeLegibility
+  letter-spacing: -1px
+  line-height: $--typo-header-line-height
+  margin-bottom: $--typo-header-margin-bottom
+  small
+    line-height: 0
+    color: $color-gray-light
+  a
+    color: inherit
+  a:hover
+    color: inherit
+
+h1, .h1
+  font-size: $font-h1
+h2, .h2
+  font-size: $font-h2
+h3, .h3
+  font-size: $font-h3
+h4, .h4
+  font-size: $font-h4
+h5, .h5
+  font-size: $font-h5
+h6, .h6
+  font-size: $font-h6
+  text-transform: uppercase
+  color: $color-gray
+  letter-spacing: 0px
+
+// size
+.text-xs
+  font-size: $font-xs
+.text-sm
+  font-size: $font-sm
+.text-md
+  font-size: $font-md
+.text-lg
+  font-size: $font-lg
+.text-xl
+  font-size: $font-xl
+
+.text-left
+  text-align: left
+.text-center
+  text-align: center
+.text-right
+  text-align: right
+
+.font-mono
+  font-family: $font-mono

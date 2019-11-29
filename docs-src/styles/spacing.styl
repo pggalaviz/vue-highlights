@@ -1,0 +1,32 @@
+// Spacing
+
+for $space, $value in $global-spaces
+  .pa-{$space}
+    padding: $value
+  .pl-{$space}
+    padding-left: $value
+  .pr-{$space}
+    padding-right: $value
+  .pt-{$space}
+    padding-top: $value
+  .pb-{$space}
+    padding-bottom: $value
+  .px-{$space}
+    @extends .pl-{$space}, .pr-{$space}
+  .py-{$space}
+    @extends .pt-{$space}, .pb-{$space}
+
+  .ma-{$space}
+    margin: $value
+  .ml-{$space}
+    margin-left: $value
+  .mr-{$space}
+    margin-right: $value
+  .mt-{$space}
+    margin-top: $value
+  .mb-{$space}
+    margin-bottom: $value
+  .mx-{$space}
+    @extends .ml-{$space}, .mr-{$space}
+  .my-{$space}
+    @extends .mt-{$space}, .mb-{$space}

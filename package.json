@@ -1,17 +1,21 @@
 {
-  "name": "vue-mentions",
+  "name": "vue-highlights",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Easy @mention, #hashtag and URL highlight for Vue 2.x",
+  "author": "Pedro G. Galaviz <hello@pggalaviz.com>",
   "scripts": {
+    "build": "vue-cli-service build --target lib --dest dist --name vue-highlights src/index.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "test": "npm run test:unit",
+    "build-docs": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "prepublish": "npm run test && npm run build"
   },
+  "main": "dist/vue-highlights.common.js",
+  "unpkg": "dist/vue-highlights.umd.min.js",
   "dependencies": {
-    "core-js": "^3.4.3",
-    "vue": "^2.6.10",
-    "vue-router": "^3.1.3"
+    "punycode": "^2.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
@@ -22,10 +26,32 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-eslint": "^10.0.3",
+    "core-js": "^3.4.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "highlight.js": "^9.16.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
     "vue-template-compiler": "^2.6.10"
+  },
+  "bugs": {
+    "url": "https://github.com/pggalaviz/vue-highlights/issues"
+  },
+  "homepage": "https://github.com/pggalaviz/vue-highlights#readme",
+  "keywords": [
+    "vue",
+    "highlight",
+    "highlights",
+    "mention",
+    "mentions",
+    "hashtag",
+    "hashtags"
+  ],
+  "licence": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pggalaviz/vue-highlights.git"
   }
 }
