@@ -133,7 +133,7 @@ const autoHighlighted = autoHighlight(text, {
 })
 
 /*
-autoLinked:
+autoHighlighted:
 my <span class="username-class">@username</span>, my <span class="hashtag-class">
 #hashtag</span> and <span class="url-class">myurl.com</span>
 */
