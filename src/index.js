@@ -15,6 +15,10 @@ export default {
       type: Boolean,
       default: true
     },
+    mentionsWithDots: {
+      type: Boolean,
+      default: false
+    },
     caretColor: {
       type: String,
       default: '#ccc'
@@ -37,7 +41,8 @@ export default {
     },
     computedBody () {
       return highlight(this.body, {
-        extractUrlsWithoutProtocol: this.extractUrlsWithoutProtocol
+        extractUrlsWithoutProtocol: this.extractUrlsWithoutProtocol,
+        mentionsWithDots: this.mentionsWithDots
       })
     }
   },

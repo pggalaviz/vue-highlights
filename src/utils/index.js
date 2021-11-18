@@ -4,7 +4,8 @@ import autoHighlight from './autoHighlight'
 
 const defaultOptions = {
   targetBlank: true,
-  extractUrlsWithoutProtocol: true
+  extractUrlsWithoutProtocol: true,
+  mentionsWithDots: false
 }
 
 export function link (text, options = defaultOptions) {

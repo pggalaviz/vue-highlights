@@ -17,7 +17,8 @@ const OPTIONS_NOT_ATTRIBUTES = {
   invisibleTagAttrs: true,
   linkAttributeBlock: true,
   htmlEscapeNonEntities: true,
-  extractUrlsWithoutProtocol: true
+  extractUrlsWithoutProtocol: true,
+  mentionsWithDots: true
 }
 
 export default function (options) {

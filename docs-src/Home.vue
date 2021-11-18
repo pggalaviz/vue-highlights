@@ -21,6 +21,7 @@
         :placeholder="placeholder"
         :caretColor="caretColor"
         :extractUrlsWithoutProtocol="options.extractUrlsWithoutProtocol"
+        :mentionsWithDots="options.mentionsWithDots"
       />
     </div>
 
@@ -28,13 +29,17 @@
       <div id="options" class="content-container">
         <h4>Options (props)</h4>
         <div class="flex center">
-          <label for="ep" class="mr-lg cursor-pointer">
+          <label for="ep" class="cursor-pointer">
             <input id="ep" type="checkbox" v-model="options.extractUrlsWithoutProtocol">
             extractUrlsWithoutProtocol
           </label>
-          <label for="tb" class="cursor-pointer">
+          <label for="tb" class="mx-lg cursor-pointer">
             <input id="tb" type="checkbox" v-model="options.targetBlank">
             targetBlank
+          </label>
+          <label for="md" class="cursor-pointer">
+            <input id="md" type="checkbox" v-model="options.mentionsWithDots">
+            mentionsWithDots
           </label>
         </div>
 
@@ -130,6 +135,7 @@ export default {
       options: {
         targetBlank: true,
         extractUrlsWithoutProtocol: true,
+        mentionsWithDots: false,
         usernameClass: 'highlights username',
         usernameUrlBase: '#/',
         hashtagClass: 'highlights hashtag',

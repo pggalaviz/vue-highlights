@@ -1083,7 +1083,7 @@ const endMentionMatch = _regexSupplant(/^(?:#{atSigns}|[#{latinAccentChars}]|:\/
 const validMention = _regexSupplant(
   '(#{validMentionPrecedingChars})' + // $1: Preceding character
   '(#{atSigns})' + // $2: At mark
-  '([a-zA-Z0-9_]{1,20})', // $3: Screen name
+  '([a-zA-Z0-9_\.]{1,20})', // $3: Screen name
   // '(/[a-zA-Z][a-zA-Z0-9_-]{0,24})?', // $4: List (optional)
   { validMentionPrecedingChars, atSigns },
   'g'
@@ -1675,6 +1675,10 @@ function src_autoLink (text, options) {
       type: Boolean,
       default: true
     },
+    mentionsWithDots: {
+      type: Boolean,
+      default: false
+    },
     caretColor: {
       type: String,
       default: '#ccc'
@@ -1697,7 +1701,8 @@ function src_autoLink (text, options) {
     },
     computedBody () {
       return highlight(this.body, {
-        extractUrlsWithoutProtocol: this.extractUrlsWithoutProtocol
+        extractUrlsWithoutProtocol: this.extractUrlsWithoutProtocol,
+        mentionsWithDots: this.mentionsWithDots
       })
     }
   },
