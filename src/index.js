@@ -67,8 +67,11 @@ export default {
       this.body = ''
     },
     onKeyUp (e) {
+      const keysToIgnore = ['Shift', 'Meta', 'Control', 'Alt', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']
+      if (keysToIgnore.includes(e.key)) return
+
       let caretPosition = this.getCaretPos()
-      if (e.keyCode === 13) { // Enter key
+      if (e.key === 'Enter') {
         caretPosition++
       }
       this.body = e.target.innerText
