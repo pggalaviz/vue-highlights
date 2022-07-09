@@ -58,6 +58,7 @@ As you can see, the component accepts some props:
 | ---- | ---- | -------- |
 | value | String | The text to highlight (**v-model**). |
 | extractUrlsWithoutProtocol | Boolean | As the name says, when active, the compoponet will try to match URLs even when a protocol (http://, https://) is not found. **Defaults to true** |
+| mentionsWithDots | Boolean | Whether a mention can contain a dot. **Defaults to false** |
 | caretColor | String | A valid HEX color (eg. #ccc, #ff4545). |
 | placeholder | String | A placeholder to show when no text is entered. |
 | usernameClass | String | The CSS class(es) that will be added to a @username match. |

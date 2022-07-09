@@ -8,7 +8,7 @@ import removeOverlappingEntities from './removeOverlappingEntities'
 
 export default function (text, options) {
   const entities = extractUrls(text, options)
-    .concat(extractMentions(text))
+    .concat(extractMentions(text, options))
     .concat(extractHashtags(text))
 
   if (entities.length === 0) {
